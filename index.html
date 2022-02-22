@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS IT</title>
+    <style>
+        body{
+            background-image: url(./background.png);
+            background-size: cover;
+        }
+        .header{
+            width: 400px;
+            margin: auto;
+            margin-top: 60px;
+        }
+        .check{
+            color: white;
+            background-color: blue;
+            padding: 10px;
+            margin-left: 15px;
+            width: fit-content;
+            height: fit-content;
+            border-radius: 10px;
+            
+        }
+        .number_enter{
+            height: 30px;
+            border: 3px solid darkslategray;
+            border-radius: 10px;
+        }
+        .bottom{
+            width: 500px;
+            margin: auto;
+            margin-top: 200px;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2 class="headh2">Guess The Number (1-100)</h2>
+        <input type="number" name="number_enter" id="number_enter" class="number_enter">
+        <button id="check" class="check">CHECK</button>
+    </div>
+
+    <div class="bottom">
+        <div class="imaj">
+            <!-- <img src="./spinner.gif" alt="Loading..." id="loading" class="loading" style="display: none"> -->
+            
+            <h3 id="warning"></h3>
+        </div>
+
+
+        
+        <h2 id>Number of attempts:  <span id="attempt_count">00</span></h2>
+        <h3>Your attempts:  <span id="attempt_list"></span></h3>
+        <br><br><br>
+        
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
